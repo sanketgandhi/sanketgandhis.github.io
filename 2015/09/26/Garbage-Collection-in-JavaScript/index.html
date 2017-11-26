@@ -10,7 +10,8 @@
 
     <!--Description-->
     
-        <meta name="description" content="Garbage collection in JavaScriptThere is different behavior of garbage collector in different programming languages.  We will see how exactly garbage ">
+        <meta name="description" content="There is different behavior of garbage collector in different programming languages.  We will see how exactly garbage collector works in JavaScript.
+L">
     
 
     <!--Author-->
@@ -20,7 +21,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="Garbage-Collection-in-JavaScript"/>
+        <meta property="og:title" content="Garbage collection in JavaScript"/>
     
 
     <!--Open Graph Description-->
@@ -42,7 +43,7 @@
 
     <!-- Title -->
     
-    <title>Garbage-Collection-in-JavaScript - Awesome Blog</title>
+    <title>Garbage collection in JavaScript - Awesome Blog</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
@@ -171,7 +172,7 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
-                    <h1>Garbage-Collection-in-JavaScript</h1>
+                    <h1>Garbage collection in JavaScript</h1>
                     
                     <span class="meta">
                         <!-- Date and Author -->
@@ -199,24 +200,18 @@
 
             <!-- Post Main Content -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <h1 id="Garbage-collection-in-JavaScript"><a href="#Garbage-collection-in-JavaScript" class="headerlink" title="Garbage collection in JavaScript"></a>Garbage collection in JavaScript</h1><pre><code>There is different behavior of garbage collector in different programming languages.  We will see how exactly garbage collector works in JavaScript.
-
-Lots of programmer stated that we can not run garbage collector manually, it runs automatically by the browser. This is some what correct BUT if we want to run GC manually then through browser **we can run it**. **So Read on**, 
-</code></pre><hr>
-<h4 id="Here-we-have-some-good-code-practices-for-GC"><a href="#Here-we-have-some-good-code-practices-for-GC" class="headerlink" title="Here we have some good code practices for GC :"></a>Here we have some good code practices for GC :</h4><ul>
-<li><p>Try to AVOID global variables. It will surely save your ass.   </p>
-<ul>
+                <p>There is different behavior of garbage collector in different programming languages.  We will see how exactly garbage collector works in JavaScript.</p>
+<p>Lots of programmer stated that we can not run garbage collector manually, it runs automatically by the browser. This is some what correct BUT if we want to run GC manually then through browser <strong>we can run it</strong>. <strong>So Read on</strong>, </p>
+<hr>
+<h2 id="Here-we-have-some-good-code-practices-for-GC"><a href="#Here-we-have-some-good-code-practices-for-GC" class="headerlink" title="Here we have some good code practices for GC"></a>Here we have some good code practices for GC</h2><ul>
+<li>Try to AVOID global variables. It will surely save your ass.</li>
 <li>Declare variables inside function so that when its scope get over then garbage collector (GC) should catch it.  </li>
-<li><p>GC only collects if -  </p>
-<ul>
-<li>Variable or array is set to null  </li>
-<li>Scope get over  </li>
-<li>object is deleted  </li>
-</ul>
-</li>
-<li><p>In ExtJs, try to define all your variable’s / object / arrays inside function. If global scope is needed then define it in Ext.onReady() method.  </p>
-</li>
-</ul>
+<li><p>GC only collects if,</p>
+<pre><code>- Variable or array is set to null  
+- Scope get over  
+- object is deleted  
+</code></pre></li>
+<li><p>In ExtJs, try to define all your variable’s / object / arrays inside function. If global scope is needed then define it in Ext.onReady() method.</p>
 </li>
 <li><p>If global variable / array is used then before winding up with your file just null your variables and arrays.  </p>
 </li>
