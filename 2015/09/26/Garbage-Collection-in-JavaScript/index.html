@@ -10,7 +10,7 @@
 
     <!--Description-->
     
-        <meta name="description" content="Use case - If you need a test server that accepts the request for basic information via HTTP GET and also allow you to POST.(Though the POST request n">
+        <meta name="description" content="Garbage collection in JavaScriptThere is different behavior of garbage collector in different programming languages.  We will see how exactly garbage ">
     
 
     <!--Author-->
@@ -20,7 +20,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="Httpbin"/>
+        <meta property="og:title" content="Garbage-Collection-in-JavaScript"/>
     
 
     <!--Open Graph Description-->
@@ -42,7 +42,7 @@
 
     <!-- Title -->
     
-    <title>Httpbin - Awesome Blog</title>
+    <title>Garbage-Collection-in-JavaScript - Awesome Blog</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
@@ -171,13 +171,13 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
-                    <h1>Httpbin</h1>
+                    <h1>Garbage-Collection-in-JavaScript</h1>
                     
                     <span class="meta">
                         <!-- Date and Author -->
                         
                         
-                            2017-09-01
+                            2015-09-26
                         
                     </span>
                 </div>
@@ -193,29 +193,49 @@
 
             <!-- Tags and categories -->
            
-                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
-                    
-                        
-
-
-<a href="/tags/API/">#API</a> <a href="/tags/Mock/">#Mock</a>
-
-
-                    
-                </div>
-                <div class="col-lg-4 col-md-5 post-categories">
-                    
-                </div>
-            
 
             <!-- Gallery -->
             
 
             <!-- Post Main Content -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <p><strong>Use case</strong> - If you need a test server that accepts the request for basic information via <code>HTTP GET</code> and also allow you to <code>POST</code>.<br>(Though the <code>POST</code> request not doing anything)</p>
-<p>Solution is <a href="http://httpbin.org/" target="_blank" rel="noopener">Httpbin</a></p>
-<p><a href="https://httpbin.org/" target="_blank" rel="noopener">Reference with doc</a></p>
+                <h1 id="Garbage-collection-in-JavaScript"><a href="#Garbage-collection-in-JavaScript" class="headerlink" title="Garbage collection in JavaScript"></a>Garbage collection in JavaScript</h1><pre><code>There is different behavior of garbage collector in different programming languages.  We will see how exactly garbage collector works in JavaScript.
+
+Lots of programmer stated that we can not run garbage collector manually, it runs automatically by the browser. This is some what correct BUT if we want to run GC manually then through browser **we can run it**. **So Read on**, 
+</code></pre><hr>
+<h4 id="Here-we-have-some-good-code-practices-for-GC"><a href="#Here-we-have-some-good-code-practices-for-GC" class="headerlink" title="Here we have some good code practices for GC :"></a>Here we have some good code practices for GC :</h4><ul>
+<li><p>Try to AVOID global variables. It will surely save your ass.   </p>
+<ul>
+<li>Declare variables inside function so that when its scope get over then garbage collector (GC) should catch it.  </li>
+<li><p>GC only collects if -  </p>
+<ul>
+<li>Variable or array is set to null  </li>
+<li>Scope get over  </li>
+<li>object is deleted  </li>
+</ul>
+</li>
+<li><p>In ExtJs, try to define all your variable’s / object / arrays inside function. If global scope is needed then define it in Ext.onReady() method.  </p>
+</li>
+</ul>
+</li>
+<li><p>If global variable / array is used then before winding up with your file just null your variables and arrays.  </p>
+</li>
+<li><p>If global object are defined DON’T assign it to null because it never going to catch by GC so for object use delete keyword.  </p>
+</li>
+<li><p>We can profile js code using chrome profiler</p>
+</li>
+</ul>
+<p>In browser there is root object called window. All other object, variable, array are attached to window through links. So if we are creating any object then one node will get add to root tree.  </p>
+<p>GC collects only those people who is not reachable from window object. If link between window and object is available then GC will never gonna collect it  </p>
+<p>WE CAN’T RUN GARBAGE COLLECTOR MANUALLY. It will get run automatically when browser heap size is near about to full else timeout.  (Generally it run on chrome after 10ms, as far as i read)  </p>
+<h4 id="Okay-let-me-tell-you-how-to-run-GC-through-browser"><a href="#Okay-let-me-tell-you-how-to-run-GC-through-browser" class="headerlink" title="Okay, let me tell you how to run GC through browser."></a>Okay, let me tell you how to run GC through browser.</h4><ul>
+<li>Open <code>Developer tool</code> by in going in options in google chrome (or simply press F12)</li>
+<li>Then go to <code>Timeline</code> tab then there is one dustbin like button. This is used to run GC manually.</li>
+<li>Start recording and stop it after few second. It will show timeline and memory consumption and lot more things.</li>
+<li>Now Press GC button and again start recording</li>
+<li>you will see big difference in both timeline (if you have a lot of memory leakage, dangling pointer etc)</li>
+</ul>
+<p><strong>Happy coding</strong> 🔥</p>
 
 
                 

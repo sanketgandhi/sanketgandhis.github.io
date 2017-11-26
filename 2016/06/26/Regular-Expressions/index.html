@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="English">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="ABCs of Regular Expression
+About RegExThere are lot of programmer in world use RegEx just because his/her boss or friend or anybody ask him to use. Bu">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Sanket Gandhi">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Regular Expressions"/>
+    
+
+    <!--Open Graph Description-->
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Awesome Blog"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article" />
+    
+
+    <!--Page Cover-->
+    
+
+        <meta name="twitter:card" content="summary" />
+    
+
+    <!-- Title -->
+    
+    <title>Regular Expressions - Awesome Blog</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Google Analytics -->
+    
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-106405877-2', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+
+
+    <!-- favicon -->
+    
+	
+</head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">🔥</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/tags">
+                            
+                                Tags
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories">
+                            
+                                Categories
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/about">
+                            
+                                About
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://github.com/sanketgandhi">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('http://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/img/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>Regular Expressions</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2016-06-26
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/tags/RegEx/">#RegEx</a>
+
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                </div>
+            
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h1 id="ABCs-of-Regular-Expression"><a href="#ABCs-of-Regular-Expression" class="headerlink" title="ABCs of Regular Expression"></a>ABCs of Regular Expression</h1><!-- , why we need RegEx, any alternative to RegEx, etc. -->
+<h2 id="About-RegEx"><a href="#About-RegEx" class="headerlink" title="About RegEx"></a>About RegEx</h2><p>There are lot of programmer in world use RegEx just because his/her boss or friend or anybody ask him to use. But we should know why it is good to know RegEx.<br>Let’s say we need to check phone number of people like 444-235-1234. So here, first 3 digit may be code and then there is <code>-</code> then again 3 digit and again<code>-</code> and so on. User may enter 10 digit phone number directly without any hyphen. </p>
+<p>So there is one option to check this, IF CONDTION. Write conditions in OR expression and get result. But it is complex to write and read it. There is also chance to get bug in this condition. So here we can use RegEx</p>
+<h2 id="How-to-use-RegEx"><a href="#How-to-use-RegEx" class="headerlink" title="How to use RegEx"></a>How to use RegEx</h2><blockquote>
+<p>Note that, in every language there is different way to use this. So I love JS so here it is ✨</p>
+</blockquote>
+<h3 id="Name-or-UserName-validation"><a href="#Name-or-UserName-validation" class="headerlink" title="Name or UserName validation"></a>Name or UserName validation</h3><ul>
+<li>Every expression in Regex start with forward slash (/) and end with forward slash For example, I want match my name then</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> myName = <span class="string">'sanket'</span>;</span><br><span class="line">myName.match(<span class="regexp">/regular expression/</span>);</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>We can place OR <code>|</code> symbol in between RegEx to match the string. For e.g <code>/san|sanket|ket/</code></p>
+</li>
+<li><p>If we want to match alphabets then we can write RegEx as <code>/[a-z]/</code></p>
+</li>
+<li><p>Note that in above RegEx, we are grouping a to z characters and it will match only one character. To match one more character we have to use <code>+</code> operator (i.e. Quantifiers). For e.g, we want to match character say <code>ar</code>, <code>arr</code>, <code>arrr</code> etc. Then we can write RegEx as <code>/ar+/</code> This will match single <code>a</code> with one or more <code>r</code>.</p>
+</li>
+<li><p>So above RegEx will be <code>/[a-z]+/</code>. This RegEx will match any small-case character between a to z. What if we want to match between A to Z. Then we can also add another group like <code>/[a-zA-Z]+/</code>. This can match any alphabet between a to z OR A to Z.</p>
+</li>
+<li><p>There is one more way to write above RegEx, <code>/[a-z]+/i</code> <code>i</code> is modifier, that means <strong>case insensitive</strong> which will match upper case and lower case</p>
+</li>
+<li><p>Now if we want to match whitespace then aboe RegEx will return false. So to do that we can use <code>/s</code> which includes white space, new line, tab. so our RegEx will be,<code>/[a-z/s]+/i OR /[/sa-z]+/i</code>. Now of course to use digit RegEx wll be <code>/[a-z/s0-9]+/i</code></p>
+</li>
+<li><p>We can refactor our character set, we can use <code>\w</code> is same as <code>[a-zA-Z0-9]</code>. So above RegEx will be <code>/[\w/s]+/</code>. </p>
+</li>
+</ul>
+<p>Cool, Right!</p>
+<h3 id="Email-Validation"><a href="#Email-Validation" class="headerlink" title="Email Validation"></a>Email Validation</h3><ul>
+<li><p>Lets say we have to match email address then our character set will be <code>/\w@\w/</code>. But this going match only 1 word-like character. So we need to add <code>+</code>, <code>/\w+@\w/</code></p>
+</li>
+<li><p>Above RegEx will match only someone@example email address omeone@example.com</p>
+</li>
+<li><p>So to match <code>.</code> (dot) then RegEx will be, <code>/\w+@\w+./</code> and again for ‘com’ RegEx will be, <code>/\w+@\w+.\w+/</code></p>
+</li>
+<li><p>But above RegEx will also match <code>!</code> instead of dot so, we need to escape dot so, <code>/\w+@\w+\.\w+/</code><br>Not that <code>.</code> in RegEx means this is wildcard which matches any character except newline<br>But in above regex there is one problem email id can be com | net | edu | org. We can’t put any other word instead of above one so our regex will be, <code>/\w+@\w+\.(com|org|net|edu)/i</code></p>
+</li>
+<li><p>We need to make sure that there should be nothing garbage between start and end of email address. so to do that we have another symbol<br><code>^</code> : start looking at beginning of string/email<br><code>$</code> : stop looking at end of string/email</p>
+</li>
+<li><p>So our final Email RegEx will be,<br>/^\w+@\w+.(com|org|net|edu)$/i</p>
+</li>
+</ul>
+<h3 id="Other"><a href="#Other" class="headerlink" title="Other"></a>Other</h3><ul>
+<li><p><code>?</code> is use to make character set optional and <code>\b</code> is use to match whole word. For e.g. We want to match ok, okay, okiee. Then regex will be <code>/\bok(ay)?\b/i</code></p>
+</li>
+<li><p><code>^</code> means ‘not’  when place in character set</p>
+</li>
+<li><p><code>\d</code> means ‘any number, so /[^\d]+/i means ‘anything that’s not number’</p>
+</li>
+<li><p><code>[^\d]</code> is same as <code>\D</code> : match every character except number (This is shorthand operator)</p>
+</li>
+<li><p><code>[^\s]</code> is same as <code>\S</code> : match every character except whitespace (This is shorthand operator)</p>
+</li>
+<li><p>Lets say if we want to match just specific pattern to 2 time then regex will be <code>\[a-z]{2}\</code>. So regex will match any character b/w a-z exactly 2 times.we can specify range like, <code>[a-z]{1,3}</code> this will match the character in string a minimum of 1 time or maximum 3 time</p>
+</li>
+</ul>
+<p>Happy Coding 🔥</p>
+<h1 id="E-mail-regular-expression"><a href="#E-mail-regular-expression" class="headerlink" title="E-mail regular expression"></a>E-mail regular expression</h1><p>Following regular expressions that validate e-mail addresses in order to find the best one. It matches most of email address</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/^(?!(?:(?:\x22?\x5C[\x00-\x7E]\x22?)|(?:\x22?[^\x5C\x22]\x22?))&#123;<span class="number">255</span>,&#125;)(?!(?:(?:\x22?\x5C[\x00-\x7E]\x22?)|(?:\x22?[^\x5C\x22]\x22?))&#123;<span class="number">65</span>,&#125;@)(?:(?:[\x21\x23-\x27\x2A\x2B\x2D\x2F-\x39\x3D\x3F\x5E-\x7E]+)|(?:\x22(?:[\x01-\x08\x0B\x0C\x0E-\x1F\x21\x23-\x5B\x5D-\x7F]|(?:\x5C[\x00-\x7F]))*\x22))(?:\.(?:(?:[\x21\x23-\x27\x2A\x2B\x2D\x2F-\x39\x3D\x3F\x5E-\x7E]+)|(?:\x22(?:[\x01-\x08\x0B\x0C\x0E-\x1F\x21\x23-\x5B\x5D-\x7F]|(?:\x5C[\x00-\x7F]))*\x22)))*@(?:(?:(?!.*[^.]&#123;<span class="number">64</span>,&#125;)(?:(?:(?:xn--)?[a-z0<span class="number">-9</span>]+(?:-[a-z0<span class="number">-9</span>]+)*\.)&#123;<span class="number">1</span>,<span class="number">126</span>&#125;)&#123;<span class="number">1</span>,&#125;(?:(?:[a-z][a-z0<span class="number">-9</span>]*)|(?:(?:xn--)[a-z0<span class="number">-9</span>]+))(?:-[a-z0<span class="number">-9</span>]+)*)|(?:\[(?:(?:IPv6:(?:(?:[a-f0<span class="number">-9</span>]&#123;<span class="number">1</span>,<span class="number">4</span>&#125;(?::[a-f0<span class="number">-9</span>]&#123;<span class="number">1</span>,<span class="number">4</span>&#125;)&#123;<span class="number">7</span>&#125;)|(?:(?!(?:.*[a-f0<span class="number">-9</span>][:\]])&#123;<span class="number">7</span>,&#125;)(?:[a-f0<span class="number">-9</span>]&#123;<span class="number">1</span>,<span class="number">4</span>&#125;(?::[a-f0<span class="number">-9</span>]&#123;<span class="number">1</span>,<span class="number">4</span>&#125;)&#123;<span class="number">0</span>,<span class="number">5</span>&#125;)?::(?:[a-f0<span class="number">-9</span>]&#123;<span class="number">1</span>,<span class="number">4</span>&#125;(?::[a-f0<span class="number">-9</span>]&#123;<span class="number">1</span>,<span class="number">4</span>&#125;)&#123;<span class="number">0</span>,<span class="number">5</span>&#125;)?)))|(?:(?:IPv6:(?:(?:[a-f0<span class="number">-9</span>]&#123;<span class="number">1</span>,<span class="number">4</span>&#125;(?::[a-f0<span class="number">-9</span>]&#123;<span class="number">1</span>,<span class="number">4</span>&#125;)&#123;<span class="number">5</span>&#125;:)|(?:(?!(?:.*[a-f0<span class="number">-9</span>]:)&#123;<span class="number">5</span>,&#125;)(?:[a-f0<span class="number">-9</span>]&#123;<span class="number">1</span>,<span class="number">4</span>&#125;(?::[a-f0<span class="number">-9</span>]&#123;<span class="number">1</span>,<span class="number">4</span>&#125;)&#123;<span class="number">0</span>,<span class="number">3</span>&#125;)?::(?:[a-f0<span class="number">-9</span>]&#123;<span class="number">1</span>,<span class="number">4</span>&#125;(?::[a-f0<span class="number">-9</span>]&#123;<span class="number">1</span>,<span class="number">4</span>&#125;)&#123;<span class="number">0</span>,<span class="number">3</span>&#125;:)?)))?(?:(?:<span class="number">25</span>[<span class="number">0</span><span class="number">-5</span>])|(?:<span class="number">2</span>[<span class="number">0</span><span class="number">-4</span>][<span class="number">0</span><span class="number">-9</span>])|(?:<span class="number">1</span>[<span class="number">0</span><span class="number">-9</span>]&#123;<span class="number">2</span>&#125;)|(?:[<span class="number">1</span><span class="number">-9</span>]?[<span class="number">0</span><span class="number">-9</span>]))(?:\.(?:(?:<span class="number">25</span>[<span class="number">0</span><span class="number">-5</span>])|(?:<span class="number">2</span>[<span class="number">0</span><span class="number">-4</span>][<span class="number">0</span><span class="number">-9</span>])|(?:<span class="number">1</span>[<span class="number">0</span><span class="number">-9</span>]&#123;<span class="number">2</span>&#125;)|(?:[<span class="number">1</span><span class="number">-9</span>]?[<span class="number">0</span><span class="number">-9</span>])))&#123;<span class="number">3</span>&#125;))\]))$/iD</span><br></pre></td></tr></table></figure>
+<p>For Javascript -</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/^[-a-z0<span class="number">-9</span>~!$%^&amp;*_=+&#125;&#123;\<span class="string">'?]+(\.[-a-z0-9~!$%^&amp;*_=+&#125;&#123;\'?]+)*@([a-z0-9_][-a-z0-9_]*(\.[-a-z0-9_]+)*\.(aero|arpa|biz|com|coop|edu|gov|info|int|mil|museum|name|net|org|pro|travel|mobi|[a-z][a-z])|([0-9]&#123;1,3&#125;\.[0-9]&#123;1,3&#125;\.[0-9]&#123;1,3&#125;\.[0-9]&#123;1,3&#125;))(:[0-9]&#123;1,5&#125;)?$/i</span></span><br></pre></td></tr></table></figure>
+<p>Test Cases are <a href="https://fightingforalostcause.net/content/misc/2006/compare-email-regex.php" target="_blank" rel="noopener">Here</a></p>
+<p>Happy Coding 🔥</p>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/sanketgandhi" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a href="sanketgandhi876" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a href="mailto:sanketgandhi876@gmail.com" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2017 Sanket Gandhi<br></p>
+                <p class="copyright text-muted">Original Theme <a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> from <a href="http://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
+                <p class="copyright text-muted">Adapted for <a target="_blank" href="https://hexo.io/">Hexo</a> by <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>
