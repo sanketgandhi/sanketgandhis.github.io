@@ -143,11 +143,11 @@
   </entry>
   
   <entry>
-    <title>Check Combo Custom Plugin ExtJS</title>
+    <title>ExtJS Check Combo Plugin</title>
     <link href="http://sanketgandhi.github.io/2015/09/26/Check-Combo-Custom-Plugin-ExtJS/"/>
     <id>http://sanketgandhi.github.io/2015/09/26/Check-Combo-Custom-Plugin-ExtJS/</id>
     <published>2015-09-26T17:50:52.000Z</published>
-    <updated>2017-12-10T07:01:39.424Z</updated>
+    <updated>2017-12-10T10:32:12.853Z</updated>
     
     <content type="html"><![CDATA[<p>In ExtJs framework, we don’t have xtype which will give feature for multi-check<br>option in combo list. I have made two new plugin.</p><p>Following is the detail information for the new xtype</p><p><strong>Ext.ux.PerCheckCombo</strong></p><p><code>xtype: percheckcombo</code></p><p>This plugin will provide checkcombo ( Checkbox as a list in combobox ) which<br>have extra facility of disableFieldFeature.</p><p>If <code>disableFieldFeature = false</code> then it will work like checkcombo</p><p>or</p><p><code>disableFieldFeature = true</code> then it will have checkcombo with particular<br>checkbox disable.</p><p>To access disableFieldFeature you should have to specify extra disablefield in<br>store (shown in example).</p><h2 id="Features"><a href="#Features" class="headerlink" title="Features"></a>Features</h2><ul><li><p>multi select using checkboxes</p></li><li><p>Can be used in a form</p></li><li><p>Checkbox can be disable/enable as per requirement</p></li></ul><p><strong>New config</strong> is added for checkbox disable <code>disableFieldFeature: true</code></p><p>Here is<br><a href="https://gist.github.com/sanket876/89cb814b4cd62e2bd69c" target="_blank" rel="noopener">example with plugin</a><br>**</p><p><strong>Happy Coding</strong> 🔥</p>]]></content>
     
@@ -196,11 +196,11 @@
   </entry>
   
   <entry>
-    <title>About Console.log() and it&#39;s various methods</title>
+    <title>Console.log() and it&#39;s various methods</title>
     <link href="http://sanketgandhi.github.io/2015/09/22/Console-Log/"/>
     <id>http://sanketgandhi.github.io/2015/09/22/Console-Log/</id>
     <published>2015-09-22T17:55:00.000Z</published>
-    <updated>2017-11-26T18:45:41.372Z</updated>
+    <updated>2017-12-10T10:32:39.354Z</updated>
     
     <content type="html"><![CDATA[<p><code>console.clear()</code></p><ul><li>Used to clear console</li></ul><p><code>console.log(‘something’)</code></p><ul><li>To log something on console</li></ul><p><code>Console.time(‘GiveName’)</code> AND <code>console.timeEnd(‘GiveName’)</code></p><ul><li>Used to calculate time required to execute code in between console.time and console.timeEnd.</li><li>It give time in millisecond</li></ul><p><code>console.profile(‘GiveName’)</code> AND <code>console.profileEnd(‘GiveName’)</code></p><ul><li>To start profile</li><li>It shows profile in profile tab with given name</li></ul><p><code>console.assert(expression, message)</code></p><ul><li>If the value passed in the first argument is false, the function will log a message given as the second argument in the web console. If the expression is true, nothing is logged.</li></ul><p><code>console.table(object)</code> AND <code>console.table(array,[“name”,”address”]);</code></p><ul><li>This function displays the provided object or array as a table</li><li>You can also restrict table to console only certain property by following way</li></ul><p><code>console.group(message)</code> AND <code>console.groupEnd(message)</code></p><ul><li>The console.group(message) groups all logs that follow after it until the console.groupEnd()is called to a dropdown list. Lists can be nested.</li></ul>]]></content>
     
@@ -231,7 +231,7 @@
     <link href="http://sanketgandhi.github.io/2015/09/19/Screen-In-Linux/"/>
     <id>http://sanketgandhi.github.io/2015/09/19/Screen-In-Linux/</id>
     <published>2015-09-19T18:06:55.000Z</published>
-    <updated>2017-11-26T18:10:23.443Z</updated>
+    <updated>2017-12-10T10:33:18.159Z</updated>
     
     <content type="html"><![CDATA[<p>We most probably use terminal in linux for various things to do, Because linux have power to do anything. So let’s see what exactly screen means.</p><p>You can keep your session running when you disconnect from SSH. Screen is like window manager for your console. It allows you to keep multiple terminal session open and easily switch between them.</p><p>Screen also protects you from disconnect, because screen session doesn’t get disconnect when you disconnect.(Tip - For windows user you have to install <a href="http://www.putty.org/" target="_blank" rel="noopener">putty</a> for SSH)</p><p>To start with, you have to make sure that screen is installed on your server. If your running on local machine then go ahead and install screen by below commands.</p><h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><p>To install screen on ubuntu 14.04 go in terminal by using following command you can install it.</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install screen</span><br></pre></td></tr></table></figure><h3 id="Commands"><a href="#Commands" class="headerlink" title="Commands"></a>Commands</h3><ul><li>To start new screen</li></ul><p><code>screen -s &lt;screenName/screenId&gt;</code></p><ul><li>To view all screen</li></ul><p><code>screen -ls</code></p><ul><li><p>To detach from screen session. Detach screen means, we can keep that screen session as it is. <code>ctrl+a+d</code></p></li><li><p>Reattach to screen</p></li></ul><p><code>screen -r &lt;screenName/screenId&gt;</code></p><ul><li>To remove screen</li></ul><p><code>screen -X -R &lt;screenName/screenId&gt;</code></p><p><strong>Happy Coding</strong> 🔥</p>]]></content>
     
@@ -244,6 +244,10 @@
     
     </summary>
     
+      <category term="Linux" scheme="http://sanketgandhi.github.io/categories/Linux/"/>
+    
+    
+      <category term="linux" scheme="http://sanketgandhi.github.io/tags/linux/"/>
     
   </entry>
   
